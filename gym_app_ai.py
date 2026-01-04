@@ -93,6 +93,7 @@ def ask_gemini_coach(exercise, current_weight, difficulty):
 # --- APP INTERFACE ---
 st.title("🏋️‍♂️ Private Gym Tracker")
 
+st.set_page_config(page_title="AI Gym Tracker", page_icon="🤖")
 day = st.selectbox("Select Routine", ["Push", "Pull", "Legs", "Cardio"])
 todays_exercises = DEFAULT_ROUTINE[day]
 
